@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="bg-dark">
+    <h1 class="display-1 text-center mb-5 text-light">KML to FPL converter</h1>
+    <div class="row mb-5">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div>
+                <label for="aircraftTailNumber" class="form-label text-light fw-bold">Enter Aircraft Tail Number</label>
+                <input type="text" class="form-control form-control-lg" id="aircraftTailNumber" placeholder="N000AB">
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div>
+                <label for="formFileLg" class="form-label text-light fw-bold">Upload a KML file</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row text-center mb-5">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button type="button" class="btn btn-primary btn-lg" onclick="main()">Submit</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row text-center mb-5">
+        <div class="col-4"></div>
+        <div class="col-4" id="downloadAll">
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row text-center mb-5" id="downloadLinks">
+
+    </div>
+</body>
+
+</html>
